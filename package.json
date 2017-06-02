@@ -10,7 +10,7 @@
     "url": "github.com/kevva"
   },
   "scripts": {
-    "test": "xo"
+    "test": "xo && ava"
   },
   "files": [
     "index.js"
@@ -26,6 +26,8 @@
     "form-data": "^2.1.4"
   },
   "devDependencies": {
-    "xo": "*"
+    "xo": "*",
+    "kap-plugin-test": "^0.4.0",
+    "ava": "*"
   }
 }

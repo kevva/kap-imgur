@@ -1,4 +1,4 @@
-# kap-imgur
+# kap-imgur [![Build Status](https://travis-ci.org/kevva/kap-imgur.svg?branch=master)](https://travis-ci.org/kevva/kap-imgur)
 
 > [Kap](https://github.com/wulkano/kap) plugin - Share GIFs on [Imgur](https://imgur.com)
 
