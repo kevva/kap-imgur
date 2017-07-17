@@ -22,7 +22,7 @@ test('request and copy to clipboard', async t => {
 			authorization: 'Client-ID 34b90e75ab1c04b'
 		}
 	});
-	t.true(plugin.context.copyToClipboard.calledWith('http://imgur.com/a/Z9B4u'));
+	t.true(plugin.context.copyToClipboard.calledWith('https://imgur.com/a/Z9B4u'));
 });
 
 test('custom `clientId`', async t => {

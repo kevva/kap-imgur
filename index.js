@@ -1,5 +1,6 @@
 'use strict';
 const fs = require('fs');
+const url = require('url');
 const FormData = require('form-data');
 
 const action = async context => {
@@ -16,9 +17,11 @@ const action = async context => {
 		headers: {authorization: `Client-ID ${context.config.get('clientId')}`}
 	});
 
-	const link = JSON.parse(response.body).data.link;
+	const link = url.parse(JSON.parse(response.body).data.link);
 
-	context.copyToClipboard(link);
+	link.protocol = 'https';
+
+	context.copyToClipboard(url.format(link));
 	context.notify('URL to the GIF has been copied to the clipboard');
 };
 
